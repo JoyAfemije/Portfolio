@@ -47,42 +47,85 @@ document.addEventListener("DOMContentLoaded", () => {
   toggleVisibility();
 });
 
-// === MOBILE MENU TOGGLE ===
-const menuToggle = document.getElementById("menu-toggle");
-const navMenu = document.getElementById("nav-menu");
-
-menuToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
-
-  // Toggle between hamburger and close icon
-  const icon = menuToggle.querySelector("i");
-  if (icon.classList.contains("fa-bars")) {
-    icon.classList.replace("fa-bars", "fa-times");
-  } else {
-    icon.classList.replace("fa-times", "fa-bars");
-  }
-});
-
-// Mobile nav toggle
+// === NAVBAR HAMBURGER MENU ===
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.querySelector(".menu-toggle");
-  const navLi = document.querySelector(".nav-li");
-  if (!menuToggle || !navLi) return;
+  const navMenu = document.getElementById("nav-menu");
 
+  if (!menuToggle || !navMenu) return;
+
+  // Toggle menu on click
   menuToggle.addEventListener("click", (e) => {
     e.stopPropagation();
-    navLi.classList.toggle("active");
-  });
+    navMenu.classList.toggle("active");
+    menuToggle.classList.toggle("open");
 
-  // Close nav when clicking outside
-  window.addEventListener("click", (e) => {
-    if (!navLi.contains(e.target) && !menuToggle.contains(e.target)) {
-      navLi.classList.remove("active");
+    // Toggle between hamburger and close icon
+    const icon = menuToggle.querySelector("i");
+    if (icon.classList.contains("fa-bars")) {
+      icon.classList.replace("fa-bars", "fa-times");
+    } else {
+      icon.classList.replace("fa-times", "fa-bars");
     }
   });
 
-  // Close on escape
+  // Close menu when clicking outside
+  window.addEventListener("click", (e) => {
+    if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+      navMenu.classList.remove("active");
+      menuToggle.classList.remove("open");
+
+      // Reset icon
+      const icon = menuToggle.querySelector("i");
+      if (icon.classList.contains("fa-times")) {
+        icon.classList.replace("fa-times", "fa-bars");
+      }
+    }
+  });
+
+  // Close on Escape
   window.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") navLi.classList.remove("active");
+    if (e.key === "Escape") {
+      navMenu.classList.remove("active");
+      menuToggle.classList.remove("open");
+
+      // Reset icon
+      const icon = menuToggle.querySelector("i");
+      if (icon.classList.contains("fa-times")) {
+        icon.classList.replace("fa-times", "fa-bars");
+      }
+    }
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const downloadBtn = document.getElementById("download-cv");
+  const cvLink = "./files/Joy-Afemije-CV.pdf"; // your CV path
+  const toast = document.getElementById("toast");
+
+  function showToast(message) {
+    toast.textContent = message;
+    toast.classList.add("show");
+
+    setTimeout(() => {
+      toast.classList.remove("show");
+    }, 3000);
+  }
+
+  downloadBtn.addEventListener("click", (e) => {
+    const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      e.preventDefault();
+      window.open(cvLink, "_blank");
+      showToast("📄 Opening CV...");
+    } else {
+      downloadBtn.setAttribute("href", cvLink);
+      downloadBtn.setAttribute("download", "");
+      showToast("⬇️ Downloading CV...");
+    }
+  });
+});
+
+

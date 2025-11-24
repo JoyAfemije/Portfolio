@@ -151,6 +151,57 @@ body {
     display: flex;
   }
 }
+/* ==== NAVBAR MOBILE MENU ==== */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Hide menu by default on mobile */
+.nav-li {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-li {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #111;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 30px 0;
+    display: none;
+    transition: all 0.4s ease;
+  }
+
+  .nav-li.active {
+    display: flex;
+  }
+
+  .nav-li ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Animate hamburger when open */
+  .menu-toggle.open i {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+  }
+}
+
 
 /* ===== MOBILE VIEW ===== */
 @media (max-width: 768px) {
@@ -418,6 +469,34 @@ body {
   background: #d4af37;
   color: #000;
 }
+
+/* Toast Notification Styling */
+#toast {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  padding: 15px;
+  position: fixed;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  z-index: 9999;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  opacity: 0;
+  transition: opacity 0.5s, bottom 0.5s;
+}
+
+#toast.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 50px;
+}
+
+
 
 /* RESPONSIVE MEDIA QUERIES */
 @media (max-width: 992px) {
