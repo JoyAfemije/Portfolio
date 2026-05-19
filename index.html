@@ -8,6 +8,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="index.css" />
+  <script>
+    (function(){
+      var saved = localStorage.getItem('portfolio-theme');
+      if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    })();
+  </script>
 </head>
 <body>
 
@@ -35,6 +41,10 @@
         <i class="fas fa-download"></i> Resume
       </a>
 
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-sun"></i>
+      </button>
+
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -46,7 +56,7 @@
     <div class="hero-inner">
       <div class="hero-tag">
         <span class="dot pulse"></span>
-        <span>Available for hire</span>
+        <span>Available for Work</span>
       </div>
 
       <p class="hero-greeting">Hello, I'm</p>
@@ -111,7 +121,7 @@
       <div class="about-grid">
         <div class="about-visual">
           <div class="img-frame">
-            <img src="./images/etana.jpg.jpg" alt="Joy Etana" class="profile-img" />
+            <img src="./images/WhatsApp Image 2026-05-16 at 09.58.52.jpeg" alt="Joy Etana" class="profile-img" />
             <div class="img-border"></div>
             <div class="img-corner tl"></div>
             <div class="img-corner tr"></div>
@@ -194,79 +204,106 @@
 
       <div class="skills-dashboard">
 
-        <div class="skill-group">
-          <h3 class="group-title"><i class="fas fa-layer-group"></i> Frontend</h3>
-          <div class="skill-bars">
-            <div class="skill-bar-item" data-level="95">
-              <div class="skill-info">
-                <i class="fab fa-html5"></i> <span>HTML5</span>
-                <span class="skill-pct">95%</span>
+        <!-- ─── LEFT: Skills (bars) ─── -->
+        <div class="skill-group skills-main-card">
+          <h3 class="group-title"><i class="fas fa-code"></i> Skills</h3>
+
+          <div class="skill-subgroup">
+            <span class="skill-sub-label">Frontend</span>
+            <div class="skill-bars">
+              <div class="skill-bar-item" data-level="95">
+                <div class="skill-info">
+                  <i class="fab fa-html5"></i> <span>HTML5</span>
+                  <span class="skill-pct">95%</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill"></div></div>
               </div>
-              <div class="bar-track"><div class="bar-fill"></div></div>
+              <div class="skill-bar-item" data-level="90">
+                <div class="skill-info">
+                  <i class="fab fa-css3-alt"></i> <span>CSS3</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill"></div></div>
+              </div>
+              <div class="skill-bar-item" data-level="85">
+                <div class="skill-info">
+                  <i class="fab fa-js"></i> <span>JavaScript</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill"></div></div>
+              </div>
+              <div class="skill-bar-item" data-level="80">
+                <div class="skill-info">
+                  <i class="fab fa-react"></i> <span>React</span>
+                  <span class="skill-pct">80%</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill"></div></div>
+              </div>
             </div>
-            <div class="skill-bar-item" data-level="90">
-              <div class="skill-info">
-                <i class="fab fa-css3-alt"></i> <span>CSS3</span>
-                <span class="skill-pct">90%</span>
+          </div>
+
+          <div class="skill-subgroup">
+            <span class="skill-sub-label">Backend &amp; Database</span>
+            <div class="skill-bars">
+              <div class="skill-bar-item" data-level="70">
+                <div class="skill-info">
+                  <i class="fab fa-node-js"></i> <span>Node.js</span>
+                  <span class="skill-pct">70%</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill"></div></div>
               </div>
-              <div class="bar-track"><div class="bar-fill"></div></div>
-            </div>
-            <div class="skill-bar-item" data-level="85">
-              <div class="skill-info">
-                <i class="fab fa-js"></i> <span>JavaScript</span>
-                <span class="skill-pct">85%</span>
+              <div class="skill-bar-item" data-level="65">
+                <div class="skill-info">
+                  <i class="fas fa-database"></i> <span>MongoDB</span>
+                  <span class="skill-pct">65%</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill"></div></div>
               </div>
-              <div class="bar-track"><div class="bar-fill"></div></div>
-            </div>
-            <div class="skill-bar-item" data-level="80">
-              <div class="skill-info">
-                <i class="fab fa-react"></i> <span>React</span>
-                <span class="skill-pct">80%</span>
+              <div class="skill-bar-item" data-level="72">
+                <div class="skill-info">
+                  <i class="fas fa-fire"></i> <span>Firebase</span>
+                  <span class="skill-pct">72%</span>
+                </div>
+                <div class="bar-track"><div class="bar-fill"></div></div>
               </div>
-              <div class="bar-track"><div class="bar-fill"></div></div>
             </div>
           </div>
         </div>
 
-        <div class="skill-group">
-          <h3 class="group-title"><i class="fas fa-server"></i> Backend & DB</h3>
-          <div class="skill-bars">
-            <div class="skill-bar-item" data-level="70">
-              <div class="skill-info">
-                <i class="fab fa-node-js"></i> <span>Node.js</span>
-                <span class="skill-pct">70%</span>
-              </div>
-              <div class="bar-track"><div class="bar-fill"></div></div>
-            </div>
-            <div class="skill-bar-item" data-level="65">
-              <div class="skill-info">
-                <i class="fas fa-database"></i> <span>MongoDB</span>
-                <span class="skill-pct">65%</span>
-              </div>
-              <div class="bar-track"><div class="bar-fill"></div></div>
-            </div>
-            <div class="skill-bar-item" data-level="72">
-              <div class="skill-info">
-                <i class="fas fa-fire"></i> <span>Firebase</span>
-                <span class="skill-pct">72%</span>
-              </div>
-              <div class="bar-track"><div class="bar-fill"></div></div>
-            </div>
-          </div>
-        </div>
+        <!-- ─── RIGHT: Tools + Version Control ─── -->
+        <div class="skills-side-col">
 
-        <div class="skill-group">
-          <h3 class="group-title"><i class="fas fa-tools"></i> Tools & Others</h3>
-          <div class="skill-tags">
-            <span class="skill-tag"><i class="fab fa-github"></i> Git & GitHub</span>
-            <span class="skill-tag"><i class="fab fa-wordpress"></i> WordPress</span>
-            <span class="skill-tag"><i class="fas fa-paint-brush"></i> UI/UX Design</span>
-            <span class="skill-tag"><i class="fas fa-mobile-alt"></i> Responsive Design</span>
-            <!-- <span class="skill-tag"><i class="fas fa-envelope"></i> Email Integration</span> -->
-            <!-- <span class="skill-tag"><i class="fab fa-stripe"></i> Stripe Payments</span> -->
-            <span class="skill-tag"><i class="fas fa-server"></i> cPanel / Hosting</span>
-            <span class="skill-tag"><i class="fas fa-users"></i> Team Collaboration</span>
+          <div class="skill-group">
+            <h3 class="group-title"><i class="fas fa-tools"></i> Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fab fa-wordpress"></i> WordPress</span>
+              <span class="skill-tag"><i class="fas fa-paint-brush"></i> UI/UX Design</span>
+              <span class="skill-tag"><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+              <span class="skill-tag"><i class="fas fa-server"></i> cPanel / Hosting</span>
+              <span class="skill-tag"><i class="fas fa-users"></i> Team Collaboration</span>
+            </div>
           </div>
+
+          <div class="skill-group">
+            <h3 class="group-title"><i class="fas fa-code-branch"></i> Version Control</h3>
+            <div class="vc-list">
+              <div class="vc-item">
+                <div class="vc-icon"><i class="fab fa-git-alt"></i></div>
+                <div class="vc-info">
+                  <strong>Git</strong>
+                  <span>Branching · Merging · Rebasing</span>
+                </div>
+              </div>
+              <div class="vc-item">
+                <div class="vc-icon"><i class="fab fa-github"></i></div>
+                <div class="vc-info">
+                  <strong>GitHub</strong>
+                  <span>PRs · Issues · Collaboration</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -285,91 +322,130 @@
       <h2 class="section-title center">Featured <em>Projects</em></h2>
       <p class="section-sub">A selection of real-world projects I've built from the ground up.</p>
 
-      <div class="projects-grid">
+      <div class="book-stage">
 
-        <!-- Project 1 -->
-        <div class="proj-card featured">
-          <div class="proj-img-wrap">
-            <img src="./images/tbii.png" alt="TBII Dropshipping" />
-            <div class="proj-overlay">
-              <div class="proj-links">
-                <a href="#" class="proj-link-btn" title="Live Site"><i class="fas fa-external-link-alt"></i></a>
-                <a href="#" class="proj-link-btn" title="GitHub"><i class="fab fa-github"></i></a>
+        <div class="book-wrap">
+
+          <!-- ── Page 1 ── -->
+          <article class="book-page" data-page="0">
+            <div class="page-spine">Joy Etana</div>
+            <div class="page-layout">
+              <div class="page-visual">
+                <img src="./images/tbii.png" alt="TBII Dropshipping Platform" />
+              </div>
+              <div class="page-info">
+                <div class="page-meta">
+                  <span class="page-num">01 / 04</span>
+                  <span class="page-badge">Featured</span>
+                </div>
+                <h3 class="page-title">TBII Dropshipping Platform</h3>
+                <p class="page-desc">Full-stack e-commerce platform with live chat, Stripe payments, Google auth, email automation, and cPanel hosting.</p>
+                <div class="page-tags">
+                  <span>HTML/CSS</span><span>JavaScript</span><span>PHP</span><span>Stripe</span>
+                </div>
+                <div class="page-links">
+                  <a href="#" class="btn-page-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                  <a href="#" class="btn-page-link ghost"><i class="fab fa-github"></i> Code</a>
+                </div>
+                <div class="page-nav">
+                  <button class="btn-flip prev" disabled><i class="fas fa-arrow-left"></i> Prev</button>
+                  <button class="btn-flip next">Next <i class="fas fa-arrow-right"></i></button>
+                </div>
               </div>
             </div>
-            <div class="proj-badge">Featured</div>
-          </div>
-          <div class="proj-info">
-            <div class="proj-num">01</div>
-            <h3>TBII Dropshipping Platform</h3>
-            <p>Full-stack e-commerce platform with live chat, Stripe payments, Google auth, email automation, and cPanel hosting.</p>
-            <div class="proj-tags">
-              <span>HTML/CSS</span><span>JavaScript</span><span>PHP</span><span>Stripe</span>
-            </div>
-          </div>
-        </div>
+          </article>
 
-        <!-- Project 2 -->
-        <div class="proj-card">
-          <div class="proj-img-wrap">
-            <img src="./images/Screenshot 2026-02-07 221929.png" alt="Resort & Spa" />
-            <div class="proj-overlay">
-              <div class="proj-links">
-                <a href="https://resort-spa.vercel.app/" target="_blank" class="proj-link-btn" title="Live Site"><i class="fas fa-external-link-alt"></i></a>
+          <!-- ── Page 2 ── -->
+          <article class="book-page" data-page="1">
+            <div class="page-spine">Joy Etana</div>
+            <div class="page-layout">
+              <div class="page-visual">
+                <img src="./images/Screenshot 2026-02-07 221929.png" alt="Resort &amp; Spa" />
+              </div>
+              <div class="page-info">
+                <div class="page-meta">
+                  <span class="page-num">02 / 04</span>
+                </div>
+                <h3 class="page-title">Resort &amp; Spa</h3>
+                <p class="page-desc">Luxury resort website with booking forms, automatic confirmation emails, and full responsive design.</p>
+                <div class="page-tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+                <div class="page-links">
+                  <a href="https://resort-spa.vercel.app/" target="_blank" class="btn-page-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                </div>
+                <div class="page-nav">
+                  <button class="btn-flip prev"><i class="fas fa-arrow-left"></i> Prev</button>
+                  <button class="btn-flip next">Next <i class="fas fa-arrow-right"></i></button>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="proj-info">
-            <div class="proj-num">02</div>
-            <h3>Resort & Spa</h3>
-            <p>Luxury resort website with booking forms, automatic confirmation emails, and full responsive design.</p>
-            <div class="proj-tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
-          </div>
-        </div>
+          </article>
 
-        <!-- Project 3 -->
-        <div class="proj-card">
-          <div class="proj-img-wrap">
-            <img src="./images/ArtisanHub.png" alt="ArtisanHub" />
-            <div class="proj-overlay">
-              <div class="proj-links">
-                <a href="https://artisan-hub-zeta.vercel.app/" target="_blank" class="proj-link-btn" title="Live Site"><i class="fas fa-external-link-alt"></i></a>
+          <!-- ── Page 3 ── -->
+          <article class="book-page" data-page="2">
+            <div class="page-spine">Joy Etana</div>
+            <div class="page-layout">
+              <div class="page-visual">
+                <img src="./images/ArtisanHub.png" alt="ArtisanHub Marketplace" />
+              </div>
+              <div class="page-info">
+                <div class="page-meta">
+                  <span class="page-num">03 / 04</span>
+                </div>
+                <h3 class="page-title">ArtisanHub Marketplace</h3>
+                <p class="page-desc">React-powered marketplace connecting local artisans with clients. Features location-based booking and portfolio showcases.</p>
+                <div class="page-tags">
+                  <span>React</span><span>JavaScript</span><span>Responsive</span>
+                </div>
+                <div class="page-links">
+                  <a href="https://artisan-hub-zeta.vercel.app/" target="_blank" class="btn-page-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                </div>
+                <div class="page-nav">
+                  <button class="btn-flip prev"><i class="fas fa-arrow-left"></i> Prev</button>
+                  <button class="btn-flip next">Next <i class="fas fa-arrow-right"></i></button>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="proj-info">
-            <div class="proj-num">03</div>
-            <h3>ArtisanHub Marketplace</h3>
-            <p>React-powered marketplace connecting local artisans with clients. Features location-based booking and portfolio showcases.</p>
-            <div class="proj-tags">
-              <span>React</span><span>JavaScript</span><span>Responsive</span>
-            </div>
-          </div>
-        </div>
+          </article>
 
-        <!-- Project 4 -->
-        <div class="proj-card">
-          <div class="proj-img-wrap">
-            <img src="./images/raigee porfolio.png" alt="Raigee Portfolio" />
-            <div class="proj-overlay">
-              <div class="proj-links">
-                <a href="#" class="proj-link-btn" title="Live Site"><i class="fas fa-external-link-alt"></i></a>
+          <!-- ── Page 4 ── -->
+          <article class="book-page" data-page="3">
+            <div class="page-spine">Joy Etana</div>
+            <div class="page-layout">
+              <div class="page-visual">
+                <img src="./images/raigee porfolio.png" alt="Raigee Portfolio" />
+              </div>
+              <div class="page-info">
+                <div class="page-meta">
+                  <span class="page-num">04 / 04</span>
+                </div>
+                <h3 class="page-title">Raigee Portfolio</h3>
+                <p class="page-desc">Personal portfolio site with smooth contact forms, automatic email delivery, and social platform integrations.</p>
+                <div class="page-tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+                <div class="page-links">
+                  <a href="#" class="btn-page-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                </div>
+                <div class="page-nav">
+                  <button class="btn-flip prev"><i class="fas fa-arrow-left"></i> Prev</button>
+                  <button class="btn-flip next" disabled>Next <i class="fas fa-arrow-right"></i></button>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="proj-info">
-            <div class="proj-num">04</div>
-            <h3>Raigee Portfolio</h3>
-            <p>Personal portfolio site with smooth contact forms, automatic email delivery, and social platform integrations.</p>
-            <div class="proj-tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span>
-            </div>
-          </div>
+          </article>
+
+        </div><!-- /book-wrap -->
+
+        <div class="book-indicators">
+          <button class="book-dot" data-goto="0"></button>
+          <button class="book-dot" data-goto="1"></button>
+          <button class="book-dot" data-goto="2"></button>
+          <button class="book-dot" data-goto="3"></button>
         </div>
 
-      </div>
+      </div><!-- /book-stage -->
     </div>
   </section>
 
@@ -470,7 +546,7 @@
               <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
               <div>
                 <span class="contact-label">Location</span>
-                <strong>Nigeria · Remote Available</strong>
+                <strong> Lagos, Nigeria · </strong>
               </div>
             </div>
           </div>
@@ -507,9 +583,9 @@
               <label for="message">Message</label>
               <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
             </div>
-            <a href="mailto:joyafemije@gmail.com" class="btn-primary full-width" id="sendBtn">
+            <button type="submit" class="btn-primary full-width" id="sendBtn">
               Send Message <i class="fas fa-paper-plane"></i>
-            </a>
+            </button>
           </form>
         </div>
 
