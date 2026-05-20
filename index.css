@@ -1028,6 +1028,28 @@ html[data-theme="light"] section:not(#home) {
   color: #111;
 }
 
+/* ── Case study link ── */
+.btn-case-study {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: var(--mono);
+  color: var(--gold);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  border-bottom: 1px solid var(--border-h);
+  padding-bottom: 2px;
+  transition: var(--trans);
+  width: fit-content;
+}
+.btn-case-study:hover {
+  color: var(--gold-lt);
+  border-color: var(--gold);
+  gap: 12px;
+}
+
 /* ── Page navigation ── */
 .page-nav {
   display: flex;

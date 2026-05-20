@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArtisanHub Marketplace — Case Study · Joy Etana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="case-study.css" />
+  <script>
+    (function(){
+      var saved = localStorage.getItem('portfolio-theme');
+      if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    })();
+  </script>
+</head>
+<body>
+
+  <canvas id="codeRain"></canvas>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="./index.html" class="logo" style="text-decoration:none">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">tanaCodes</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <a href="./index.html#projects" class="cs-back">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+      </a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-sun"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="cs-hero">
+    <div class="cs-hero-inner">
+      <div class="cs-eyebrow">Case Study · 03</div>
+      <h1 class="cs-hero-title">ArtisanHub <em>Marketplace</em></h1>
+      <p class="cs-hero-tagline">
+        A React-powered platform bridging the gap between skilled local artisans and clients seeking quality handcrafted services — with location-based discovery, portfolio showcases, and a seamless booking flow.
+      </p>
+      <div class="cs-meta-row">
+        <span class="cs-meta-item"><i class="fas fa-calendar-alt"></i> 2025</span>
+        <span class="cs-meta-item"><i class="fas fa-user"></i> Solo Developer</span>
+        <span class="cs-meta-item"><i class="fab fa-react"></i> React SPA</span>
+        <span class="cs-meta-item"><i class="fas fa-globe"></i> Live on Vercel</span>
+      </div>
+      <div class="cs-hero-btns">
+        <a href="https://artisan-hub-zeta.vercel.app/" target="_blank" class="btn-primary">Live Site <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── COVER IMAGE ── -->
+  <div class="cs-cover">
+    <img src="./images/ArtisanHub.png" alt="ArtisanHub Marketplace screenshot" />
+  </div>
+
+  <!-- ── OVERVIEW ── -->
+  <section class="cs-section">
+    <div class="cs-container">
+      <div class="cs-overview-grid">
+        <div>
+          <div class="cs-label">// Project Overview</div>
+          <h2 class="cs-section-title">Connecting Artisans <em>& Clients</em></h2>
+          <div class="cs-divider"></div>
+          <p class="cs-body">
+            ArtisanHub is a two-sided marketplace built entirely in React, solving a real problem in local creative economies: skilled artisans struggle to reach customers, and clients struggle to find quality local craftspeople they can trust.
+          </p>
+          <p class="cs-body">
+            The platform lets artisans create rich portfolio profiles showcasing their work, skills, and availability. Clients can search by location and craft category, browse portfolios, read reviews, and book sessions — all in a single, fluid experience. Built as a single-page application for a fast, app-like feel.
+          </p>
+        </div>
+        <div class="cs-stats-col">
+          <div class="cs-stat-block">
+            <span class="num">React</span>
+            <span class="lbl">SPA Architecture</span>
+          </div>
+          <div class="cs-stat-block">
+            <span class="num">2-sided</span>
+            <span class="lbl">Marketplace</span>
+          </div>
+          <div class="cs-stat-block">
+            <span class="num">Live</span>
+            <span class="lbl">on Vercel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CHALLENGE & SOLUTION ── -->
+  <section class="cs-section alt">
+    <div class="cs-container">
+      <div class="cs-label">// Problem & Approach</div>
+      <h2 class="cs-section-title">The Challenge & <em>Solution</em></h2>
+      <div class="cs-divider"></div>
+      <div class="cs-two-col">
+        <div class="cs-col-card">
+          <h3>The Challenge</h3>
+          <p>
+            Local artisans — carpenters, seamstresses, potters, jewellers — have no reliable digital home. Social media is too noisy and generic, while building individual websites is too expensive. Clients searching for these services waste time on unreliable referrals. There was a clear gap for a purpose-built local marketplace.
+          </p>
+        </div>
+        <div class="cs-col-card">
+          <h3>The Solution</h3>
+          <p>
+            I built a component-driven React SPA where artisans register and build portfolio profiles (images, bio, services, rates, location). Clients get a filterable discovery feed. React Router handles multi-view navigation without page reloads, keeping the experience fast. State is managed via React hooks, keeping the codebase lean and predictable.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURES ── -->
+  <section class="cs-section">
+    <div class="cs-container">
+      <div class="cs-label">// Functionality</div>
+      <h2 class="cs-section-title">Key <em>Features</em></h2>
+      <div class="cs-divider"></div>
+      <div class="cs-features-grid">
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-map-marked-alt"></i></div>
+          <h3>Location Discovery</h3>
+          <p>Search and filter artisans by city or region, making it easy to find skilled crafts people nearby.</p>
+        </div>
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-id-card"></i></div>
+          <h3>Artisan Profiles</h3>
+          <p>Rich profile pages with portfolio galleries, service descriptions, pricing, and availability calendars.</p>
+        </div>
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-calendar-alt"></i></div>
+          <h3>Booking System</h3>
+          <p>Clients can request bookings directly through the platform with date and service selection.</p>
+        </div>
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fab fa-react"></i></div>
+          <h3>SPA Navigation</h3>
+          <p>React Router-powered navigation for instant, page-reload-free transitions between all views.</p>
+        </div>
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-filter"></i></div>
+          <h3>Smart Filtering</h3>
+          <p>Filter artisans by craft category, location, rating, and price range to find the perfect match fast.</p>
+        </div>
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Responsive Design</h3>
+          <p>Mobile-first layout ensuring artisans and clients have a great experience on any device.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TECH STACK ── -->
+  <section class="cs-section alt">
+    <div class="cs-container">
+      <div class="cs-label">// Technologies</div>
+      <h2 class="cs-section-title">Tech <em>Stack</em></h2>
+      <div class="cs-divider"></div>
+      <div class="cs-tech-grid">
+        <div class="cs-tech-chip">
+          <i class="fab fa-react"></i>
+          <div class="cs-tech-chip-info">
+            <strong>React</strong>
+            <span>Component-driven SPA architecture</span>
+          </div>
+        </div>
+        <div class="cs-tech-chip">
+          <i class="fab fa-js-square"></i>
+          <div class="cs-tech-chip-info">
+            <strong>JavaScript (ES6+)</strong>
+            <span>Hooks, state management, async logic</span>
+          </div>
+        </div>
+        <div class="cs-tech-chip">
+          <i class="fab fa-css3-alt"></i>
+          <div class="cs-tech-chip-info">
+            <strong>CSS3</strong>
+            <span>Custom styling, responsive layouts</span>
+          </div>
+        </div>
+        <div class="cs-tech-chip">
+          <i class="fas fa-route"></i>
+          <div class="cs-tech-chip-info">
+            <strong>React Router</strong>
+            <span>Client-side routing & navigation</span>
+          </div>
+        </div>
+        <div class="cs-tech-chip">
+          <i class="fas fa-rocket"></i>
+          <div class="cs-tech-chip-info">
+            <strong>Vercel</strong>
+            <span>CI/CD deployment from GitHub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SCREENSHOT ── -->
+  <section class="cs-section">
+    <div class="cs-container">
+      <div class="cs-label">// Preview</div>
+      <h2 class="cs-section-title">Project <em>Screenshots</em></h2>
+      <div class="cs-divider"></div>
+      <div class="cs-gallery">
+        <img src="./images/ArtisanHub.png" alt="ArtisanHub Marketplace full view" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RESULTS ── -->
+  <section class="cs-section alt">
+    <div class="cs-container">
+      <div class="cs-label">// Outcomes</div>
+      <h2 class="cs-section-title">Results & <em>Takeaways</em></h2>
+      <div class="cs-divider"></div>
+      <p class="cs-body">
+        ArtisanHub is live on Vercel and demonstrates how React's component model scales gracefully for marketplace UIs. The project sharpened my skills in state management, routing architecture, and designing systems that serve two distinct user types simultaneously.
+      </p>
+      <ul class="cs-results-list">
+        <li>Fully deployed React SPA live on Vercel with automatic GitHub deployments</li>
+        <li>Two distinct user journeys (artisan & client) handled cleanly within one codebase</li>
+        <li>Location-based search reducing discovery friction for clients</li>
+        <li>Reusable component library built during development — cards, filters, modals, forms</li>
+        <li>Mobile-responsive throughout with fluid grid layouts</li>
+        <li>Clean React hooks architecture with zero class components</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── NEXT PROJECT ── -->
+  <section class="cs-cta-section">
+    <div class="cs-container">
+      <div class="cs-cta-label">// Next Case Study</div>
+      <h2>Raigee Portfolio</h2>
+      <p>Personal portfolio with smooth contact forms, email delivery, and social platform integrations.</p>
+      <div class="cs-cta-btns">
+        <a href="./raigee.html" class="btn-primary">View Case Study <i class="fas fa-arrow-right"></i></a>
+        <a href="./index.html#projects" class="btn-ghost">All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">tanaCodes</span>
+        <span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy">© 2025 Joy Afemije · Built with passion &amp; code</p>
+      <ul class="footer-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html#projects">Projects</a></li>
+        <li><a href="./index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <div id="toast"></div>
+  <script src="main.js"></script>
+</body>
+</html>

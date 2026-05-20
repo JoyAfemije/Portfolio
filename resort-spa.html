@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resort & Spa — Case Study · Joy Etana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="case-study.css" />
+  <script>
+    (function(){
+      var saved = localStorage.getItem('portfolio-theme');
+      if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    })();
+  </script>
+</head>
+<body>
+
+  <canvas id="codeRain"></canvas>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="./index.html" class="logo" style="text-decoration:none">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">tanaCodes</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <a href="./index.html#projects" class="cs-back">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+      </a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-sun"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="cs-hero">
+    <div class="cs-hero-inner">
+      <div class="cs-eyebrow">Case Study · 02</div>
+      <h1 class="cs-hero-title">Resort &amp; <em>Spa</em></h1>
+      <p class="cs-hero-tagline">
+        A premium luxury hospitality website designed to evoke elegance — featuring online booking, automated guest confirmation emails, and a flawlessly responsive experience across every device.
+      </p>
+      <div class="cs-meta-row">
+        <span class="cs-meta-item"><i class="fas fa-calendar-alt"></i> 2025</span>
+        <span class="cs-meta-item"><i class="fas fa-user"></i> Solo Developer</span>
+        <span class="cs-meta-item"><i class="fas fa-paint-brush"></i> Frontend</span>
+        <span class="cs-meta-item"><i class="fas fa-globe"></i> Live on Vercel</span>
+      </div>
+      <div class="cs-hero-btns">
+        <a href="https://resort-spa.vercel.app/" target="_blank" class="btn-primary">Live Site <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── COVER IMAGE ── -->
+  <div class="cs-cover">
+    <img src="./images/Screenshot 2026-02-07 221929.png" alt="Resort & Spa website screenshot" />
+  </div>
+
+  <!-- ── OVERVIEW ── -->
+  <section class="cs-section">
+    <div class="cs-container">
+      <div class="cs-overview-grid">
+        <div>
+          <div class="cs-label">// Project Overview</div>
+          <h2 class="cs-section-title">A Luxury <em>Digital Experience</em></h2>
+          <div class="cs-divider"></div>
+          <p class="cs-body">
+            The Resort & Spa website was designed to communicate exclusivity and calm the moment a visitor lands on it. Every layout decision — from the full-screen hero imagery to the whitespace-heavy room listings — was made to mirror the physical luxury experience the brand delivers.
+          </p>
+          <p class="cs-body">
+            The site includes an integrated booking form that validates guest details and triggers an automated confirmation email immediately after submission, keeping the guest informed and the operation efficient without any manual intervention.
+          </p>
+        </div>
+        <div class="cs-stats-col">
+          <div class="cs-stat-block">
+            <span class="num">100%</span>
+            <span class="lbl">Responsive</span>
+          </div>
+          <div class="cs-stat-block">
+            <span class="num">Auto</span>
+            <span class="lbl">Email Confirm</span>
+          </div>
+          <div class="cs-stat-block">
+            <span class="num">Live</span>
+            <span class="lbl">on Vercel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CHALLENGE & SOLUTION ── -->
+  <section class="cs-section alt">
+    <div class="cs-container">
+      <div class="cs-label">// Problem & Approach</div>
+      <h2 class="cs-section-title">The Challenge & <em>Solution</em></h2>
+      <div class="cs-divider"></div>
+      <div class="cs-two-col">
+        <div class="cs-col-card">
+          <h3>The Challenge</h3>
+          <p>
+            Luxury brands live and die by first impressions. The client needed a website that would communicate premium quality instantly — not just in visuals, but in performance and UX. Visitors needed to be able to book rooms and feel confident they were heard, all without the friction of a phone call or email back-and-forth.
+          </p>
+        </div>
+        <div class="cs-col-card">
+          <h3>The Solution</h3>
+          <p>
+            I paired bold, full-bleed photography with generous whitespace and a restrained colour palette to create an immediately upscale feel. The booking form was engineered with real-time field validation and wired to an email automation service so guests receive a confirmation within seconds of submitting — no manual steps required.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURES ── -->
+  <section class="cs-section">
+    <div class="cs-container">
+      <div class="cs-label">// Functionality</div>
+      <h2 class="cs-section-title">Key <em>Features</em></h2>
+      <div class="cs-divider"></div>
+      <div class="cs-features-grid">
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-calendar-check"></i></div>
+          <h3>Online Booking</h3>
+          <p>Fully validated booking form capturing guest details, check-in/out dates, room preference and special requests.</p>
+        </div>
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-envelope-open-text"></i></div>
+          <h3>Auto Confirmation</h3>
+          <p>Automated confirmation email fires immediately after booking submission — guest receives it within seconds.</p>
+        </div>
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-images"></i></div>
+          <h3>Immersive Gallery</h3>
+          <p>Full-screen photography sections and a curated gallery showcasing rooms, facilities, and dining experiences.</p>
+        </div>
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Fully Responsive</h3>
+          <p>Fluid layouts and adaptive typography ensuring the luxury experience holds up on every screen size.</p>
+        </div>
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-spa"></i></div>
+          <h3>Services Showcase</h3>
+          <p>Dedicated sections for spa treatments, dining, room types, and amenities with elegant card layouts.</p>
+        </div>
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h3>Location & Contact</h3>
+          <p>Embedded map, contact details, and multiple ways for guests to reach the property before arriving.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TECH STACK ── -->
+  <section class="cs-section alt">
+    <div class="cs-container">
+      <div class="cs-label">// Technologies</div>
+      <h2 class="cs-section-title">Tech <em>Stack</em></h2>
+      <div class="cs-divider"></div>
+      <div class="cs-tech-grid">
+        <div class="cs-tech-chip">
+          <i class="fab fa-html5"></i>
+          <div class="cs-tech-chip-info">
+            <strong>HTML5</strong>
+            <span>Semantic, accessible markup</span>
+          </div>
+        </div>
+        <div class="cs-tech-chip">
+          <i class="fab fa-css3-alt"></i>
+          <div class="cs-tech-chip-info">
+            <strong>CSS3</strong>
+            <span>Custom styling, animations, Grid & Flexbox</span>
+          </div>
+        </div>
+        <div class="cs-tech-chip">
+          <i class="fab fa-js-square"></i>
+          <div class="cs-tech-chip-info">
+            <strong>JavaScript</strong>
+            <span>Form validation & email trigger logic</span>
+          </div>
+        </div>
+        <div class="cs-tech-chip">
+          <i class="fas fa-envelope"></i>
+          <div class="cs-tech-chip-info">
+            <strong>EmailJS</strong>
+            <span>Automated booking confirmation emails</span>
+          </div>
+        </div>
+        <div class="cs-tech-chip">
+          <i class="fas fa-rocket"></i>
+          <div class="cs-tech-chip-info">
+            <strong>Vercel</strong>
+            <span>Fast, global CDN deployment</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SCREENSHOT ── -->
+  <section class="cs-section">
+    <div class="cs-container">
+      <div class="cs-label">// Preview</div>
+      <h2 class="cs-section-title">Project <em>Screenshots</em></h2>
+      <div class="cs-divider"></div>
+      <div class="cs-gallery">
+        <img src="./images/Screenshot 2026-02-07 221929.png" alt="Resort & Spa full page view" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RESULTS ── -->
+  <section class="cs-section alt">
+    <div class="cs-container">
+      <div class="cs-label">// Outcomes</div>
+      <h2 class="cs-section-title">Results & <em>Takeaways</em></h2>
+      <div class="cs-divider"></div>
+      <p class="cs-body">
+        The Resort & Spa site launched on Vercel and immediately delivered the elevated first impression the brand needed. The automated booking flow eliminated manual email confirmations entirely, freeing up staff time while improving the guest experience.
+      </p>
+      <ul class="cs-results-list">
+        <li>Live on Vercel with zero downtime since launch</li>
+        <li>Booking confirmation emails delivered in under 5 seconds of form submission</li>
+        <li>Consistent, luxury-grade experience across mobile, tablet, and desktop</li>
+        <li>Accessible, semantic HTML scoring well on Lighthouse audits</li>
+        <li>Reusable email template that the client can update independently</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── NEXT PROJECT ── -->
+  <section class="cs-cta-section">
+    <div class="cs-container">
+      <div class="cs-cta-label">// Next Case Study</div>
+      <h2>ArtisanHub Marketplace</h2>
+      <p>React-powered platform connecting local artisans with clients through location-based discovery.</p>
+      <div class="cs-cta-btns">
+        <a href="./artisanhub.html" class="btn-primary">View Case Study <i class="fas fa-arrow-right"></i></a>
+        <a href="./index.html#projects" class="btn-ghost">All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">tanaCodes</span>
+        <span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy">© 2025 Joy Afemije · Built with passion &amp; code</p>
+      <ul class="footer-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html#projects">Projects</a></li>
+        <li><a href="./index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <div id="toast"></div>
+  <script src="main.js"></script>
+</body>
+</html>

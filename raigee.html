@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raigee Portfolio — Case Study · Joy Etana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="case-study.css" />
+  <script>
+    (function(){
+      var saved = localStorage.getItem('portfolio-theme');
+      if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    })();
+  </script>
+</head>
+<body>
+
+  <canvas id="codeRain"></canvas>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="./index.html" class="logo" style="text-decoration:none">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">tanaCodes</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <a href="./index.html#projects" class="cs-back">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+      </a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-sun"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="cs-hero">
+    <div class="cs-hero-inner">
+      <div class="cs-eyebrow">Case Study · 04</div>
+      <h1 class="cs-hero-title">Raigee <em>Portfolio</em></h1>
+      <p class="cs-hero-tagline">
+        A polished personal portfolio for a creative professional — featuring smooth animations, a working contact form with automated email delivery, and deep social platform integration to unify their online presence.
+      </p>
+      <div class="cs-meta-row">
+        <span class="cs-meta-item"><i class="fas fa-calendar-alt"></i> 2025</span>
+        <span class="cs-meta-item"><i class="fas fa-user"></i> Client Project</span>
+        <span class="cs-meta-item"><i class="fas fa-paint-brush"></i> Frontend</span>
+        <span class="cs-meta-item"><i class="fas fa-code"></i> HTML / CSS / JS</span>
+      </div>
+      <div class="cs-hero-btns">
+        <a href="#" class="btn-primary">Live Site <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── COVER IMAGE ── -->
+  <div class="cs-cover">
+    <img src="./images/raigee porfolio.png" alt="Raigee Portfolio screenshot" />
+  </div>
+
+  <!-- ── OVERVIEW ── -->
+  <section class="cs-section">
+    <div class="cs-container">
+      <div class="cs-overview-grid">
+        <div>
+          <div class="cs-label">// Project Overview</div>
+          <h2 class="cs-section-title">A Portfolio That <em>Works Hard</em></h2>
+          <div class="cs-divider"></div>
+          <p class="cs-body">
+            Raigee is a creative professional who needed a digital home that reflected their personality and work ethic — not a generic template, but something bespoke, animated, and genuinely functional. The site needed to do more than look good: it had to actively convert visitors into clients.
+          </p>
+          <p class="cs-body">
+            The portfolio was built with a focus on performance and polish. Every interaction — from scroll reveals to hover states — was carefully crafted to feel intentional. The contact form connects directly to the client's inbox via an email API, and social platform links are woven throughout the layout so visitors can explore Raigee's work wherever they share it.
+          </p>
+        </div>
+        <div class="cs-stats-col">
+          <div class="cs-stat-block">
+            <span class="num">0ms</span>
+            <span class="lbl">Framework overhead</span>
+          </div>
+          <div class="cs-stat-block">
+            <span class="num">Auto</span>
+            <span class="lbl">Email on contact</span>
+          </div>
+          <div class="cs-stat-block">
+            <span class="num">100%</span>
+            <span class="lbl">Custom Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CHALLENGE & SOLUTION ── -->
+  <section class="cs-section alt">
+    <div class="cs-container">
+      <div class="cs-label">// Problem & Approach</div>
+      <h2 class="cs-section-title">The Challenge & <em>Solution</em></h2>
+      <div class="cs-divider"></div>
+      <div class="cs-two-col">
+        <div class="cs-col-card">
+          <h3>The Challenge</h3>
+          <p>
+            Raigee's work was scattered across Instagram, Behance, and LinkedIn, with no central hub pulling it together. Potential clients were landing on the Instagram bio and bouncing — there was nowhere to go deeper. The challenge was creating a single destination that consolidated their brand identity and made it trivially easy for clients to reach out.
+          </p>
+        </div>
+        <div class="cs-col-card">
+          <h3>The Solution</h3>
+          <p>
+            I designed a single-page portfolio with clear sections for work, skills, and contact. Scroll-triggered reveal animations guide the visitor through the story naturally. Social links are prominent throughout, not buried in a footer. The contact form triggers an email to Raigee's inbox the moment a visitor submits — no intermediary steps, no missed leads.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURES ── -->
+  <section class="cs-section">
+    <div class="cs-container">
+      <div class="cs-label">// Functionality</div>
+      <h2 class="cs-section-title">Key <em>Features</em></h2>
+      <div class="cs-divider"></div>
+      <div class="cs-features-grid">
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-magic"></i></div>
+          <h3>Scroll Animations</h3>
+          <p>IntersectionObserver-powered reveal animations that bring sections to life as the visitor scrolls through.</p>
+        </div>
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-paper-plane"></i></div>
+          <h3>Working Contact Form</h3>
+          <p>Validated contact form that sends the message directly to Raigee's email without any page redirect.</p>
+        </div>
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-share-alt"></i></div>
+          <h3>Social Integration</h3>
+          <p>Instagram, Behance, LinkedIn, and Twitter links woven into the layout — not just footer icons.</p>
+        </div>
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-briefcase"></i></div>
+          <h3>Work Showcase</h3>
+          <p>Curated portfolio grid highlighting selected projects with hover previews and external links.</p>
+        </div>
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-feather-alt"></i></div>
+          <h3>Lightweight & Fast</h3>
+          <p>Zero framework dependencies — pure HTML, CSS, and JS keeping the page lean and instantly loadable.</p>
+        </div>
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Fully Responsive</h3>
+          <p>Every section reflows gracefully on mobile — crucial for a creative whose audience browses on phones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TECH STACK ── -->
+  <section class="cs-section alt">
+    <div class="cs-container">
+      <div class="cs-label">// Technologies</div>
+      <h2 class="cs-section-title">Tech <em>Stack</em></h2>
+      <div class="cs-divider"></div>
+      <div class="cs-tech-grid">
+        <div class="cs-tech-chip">
+          <i class="fab fa-html5"></i>
+          <div class="cs-tech-chip-info">
+            <strong>HTML5</strong>
+            <span>Semantic, structured markup</span>
+          </div>
+        </div>
+        <div class="cs-tech-chip">
+          <i class="fab fa-css3-alt"></i>
+          <div class="cs-tech-chip-info">
+            <strong>CSS3</strong>
+            <span>Animations, transitions, responsive grid</span>
+          </div>
+        </div>
+        <div class="cs-tech-chip">
+          <i class="fab fa-js-square"></i>
+          <div class="cs-tech-chip-info">
+            <strong>JavaScript</strong>
+            <span>IntersectionObserver, form logic</span>
+          </div>
+        </div>
+        <div class="cs-tech-chip">
+          <i class="fas fa-envelope"></i>
+          <div class="cs-tech-chip-info">
+            <strong>Email API</strong>
+            <span>Direct inbox delivery on form submit</span>
+          </div>
+        </div>
+        <div class="cs-tech-chip">
+          <i class="fab fa-font-awesome"></i>
+          <div class="cs-tech-chip-info">
+            <strong>Font Awesome</strong>
+            <span>Iconography throughout the UI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SCREENSHOT ── -->
+  <section class="cs-section">
+    <div class="cs-container">
+      <div class="cs-label">// Preview</div>
+      <h2 class="cs-section-title">Project <em>Screenshots</em></h2>
+      <div class="cs-divider"></div>
+      <div class="cs-gallery">
+        <img src="./images/raigee porfolio.png" alt="Raigee Portfolio full view" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RESULTS ── -->
+  <section class="cs-section alt">
+    <div class="cs-container">
+      <div class="cs-label">// Outcomes</div>
+      <h2 class="cs-section-title">Results & <em>Takeaways</em></h2>
+      <div class="cs-divider"></div>
+      <p class="cs-body">
+        The Raigee portfolio gave the client a professional, conversion-optimised home for their brand. The automated contact form eliminated missed enquiries, and the cohesive design language elevated the perceived quality of their work — even before a potential client clicked through to see it.
+      </p>
+      <ul class="cs-results-list">
+        <li>Custom portfolio delivering a strong brand identity with zero template dependencies</li>
+        <li>Contact form wired directly to client inbox — no leads fall through the cracks</li>
+        <li>Scroll-triggered animations creating an engaging, narrative-driven user experience</li>
+        <li>Social integrations consolidating the client's scattered online presence into one hub</li>
+        <li>Fully responsive — consistent experience for mobile-first creative audiences</li>
+        <li>Fast load times with no framework overhead — pure HTML, CSS, and JavaScript</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── BACK TO START CTA ── -->
+  <section class="cs-cta-section">
+    <div class="cs-container">
+      <div class="cs-cta-label">// You've seen them all</div>
+      <h2>Like what you see?</h2>
+      <p>Let's work together on your next project.</p>
+      <div class="cs-cta-btns">
+        <a href="./index.html#contact" class="btn-primary">Get in Touch <i class="fas fa-arrow-right"></i></a>
+        <a href="./tbii.html" class="btn-ghost">Back to Project 01</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">tanaCodes</span>
+        <span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy">© 2025 Joy Afemije · Built with passion &amp; code</p>
+      <ul class="footer-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html#projects">Projects</a></li>
+        <li><a href="./index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <div id="toast"></div>
+  <script src="main.js"></script>
+</body>
+</html>
