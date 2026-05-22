@@ -174,10 +174,39 @@ html[data-theme="light"] section:not(#home) {
 .section-sub {
   text-align: center;
   max-width: 560px;
-  margin: 0 auto 60px;
+  margin: 0 auto 24px;
   color: var(--muted);
   font-size: 1rem;
   line-height: 1.7;
+}
+
+/* Email direct link — shown below contact section subtitle */
+.email-direct-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--gold);
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1.5px solid var(--border-h);
+  padding: 9px 22px;
+  border-radius: 30px;
+  background: var(--gold-dim);
+  margin: 0 auto 52px;
+  display: flex;
+  width: fit-content;
+  transition: var(--trans);
+  letter-spacing: 0.02em;
+}
+.email-direct-link i { font-size: 0.95rem; }
+.email-direct-link:hover {
+  background: var(--gold);
+  color: #000;
+  border-color: var(--gold);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px var(--gold-dim);
 }
 
 /* ===== BUTTONS ===== */

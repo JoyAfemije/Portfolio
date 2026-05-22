@@ -477,11 +477,8 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    const fn = form.querySelector("#firstName").value.trim();
-    const ln = form.querySelector("#lastName").value.trim();
+    const name = form.querySelector("#name").value.trim();
     const email = form.querySelector("#email").value.trim();
-    const subject =
-      form.querySelector("#subject").value.trim() || "Portfolio Contact";
     const msg = form.querySelector("#message").value.trim();
 
     // Show loading state
@@ -497,9 +494,9 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
         },
         body: JSON.stringify({
           access_key: WEB3FORMS_KEY,
-          name: `${fn} ${ln}`,
+          name,
           email,
-          subject,
+          subject: "Portfolio Contact",
           message: msg,
         }),
       });
