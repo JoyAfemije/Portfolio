@@ -412,16 +412,70 @@ html[data-theme="light"] .cs-hero::before {
 @media (max-width: 900px) {
   .cs-overview-grid { grid-template-columns: 1fr; gap: 36px; }
   .cs-stats-col { flex-direction: row; flex-wrap: wrap; }
-  .cs-stat-block { flex: 1; min-width: 120px; }
+  .cs-stat-block { flex: 1; min-width: 110px; }
   .cs-two-col { grid-template-columns: 1fr; gap: 20px; }
   .cs-features-grid { grid-template-columns: 1fr 1fr; }
+  .cs-tech-grid { gap: 10px; }
+}
+
+@media (max-width: 700px) {
+  .cs-hero { padding: 120px 5% 56px; }
+  .cs-section { padding: 64px 5%; }
+  .cs-cta-section { padding: 64px 5%; }
+  .cs-hero-title { font-size: 2rem; }
+  .cs-hero-tagline { font-size: 1rem; }
+  .cs-section-title { font-size: 1.5rem; }
+  .cs-cta-section h2 { font-size: 1.6rem; }
+  .cs-meta-row { gap: 12px 18px; }
+  .cs-meta-item { font-size: 0.72rem; }
+  .cs-col-card { padding: 24px 20px; }
+  .cs-stat-block .num { font-size: 1.6rem; }
 }
 
 @media (max-width: 600px) {
-  .cs-hero { padding: 130px 5% 60px; }
-  .cs-section { padding: 60px 5%; }
+  .cs-hero { padding: 110px 5% 50px; }
+  .cs-section { padding: 52px 5%; }
+  .cs-cta-section { padding: 56px 5%; }
   .cs-features-grid { grid-template-columns: 1fr; }
-  .cs-hero-title { font-size: 2rem; }
+  .cs-hero-title { font-size: 1.75rem; }
+  .cs-hero-tagline { font-size: 0.95rem; }
+  .cs-section-title { font-size: 1.35rem; }
+  .cs-body { font-size: 0.92rem; }
+  .cs-tech-chip { width: calc(50% - 5px); }
+  /* Hero buttons stack full-width */
+  .cs-hero-btns { flex-direction: column; align-items: stretch; }
+  .cs-hero-btns .btn-primary,
+  .cs-hero-btns .btn-ghost { text-align: center; justify-content: center; display: flex; }
+  /* CTA buttons stack full-width */
+  .cs-cta-btns { flex-direction: column; align-items: stretch; }
+  .cs-cta-btns .btn-primary,
+  .cs-cta-btns .btn-ghost { text-align: center; justify-content: center; display: flex; }
+  .cs-stat-block .num { font-size: 1.4rem; }
+  .cs-cover { max-height: 260px; }
+}
+
+@media (max-width: 480px) {
+  /* Compact navbar — show icon only for back button */
+  .cs-back { font-size: 0; padding: 8px 11px; gap: 0; }
+  .cs-back i { font-size: 0.95rem; }
+  .cs-hero { padding: 100px 4% 44px; }
+  .cs-section { padding: 44px 4%; }
+  .cs-cta-section { padding: 48px 4%; }
+  .cs-hero-title { font-size: 1.55rem; line-height: 1.2; }
+  .cs-section-title { font-size: 1.25rem; }
+  .cs-cta-section h2 { font-size: 1.4rem; }
+  .cs-tech-chip { width: 100%; }
+  .cs-two-col { gap: 14px; }
+  .cs-col-card { padding: 20px 16px; }
+  .cs-feature-card { padding: 22px 18px; }
+  .cs-meta-row { gap: 10px 14px; }
+  .cs-results-list li { font-size: 0.88rem; }
+}
+
+@media (max-width: 360px) {
+  .cs-hero-title { font-size: 1.4rem; }
+  .cs-section-title { font-size: 1.15rem; }
+  .cs-hero-tagline { font-size: 0.88rem; }
 }
 
 /* ============================================
