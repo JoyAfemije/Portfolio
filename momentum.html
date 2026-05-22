@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Momentum — Case Study · Joy Etana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="case-study.css" />
+  <script>
+    (function(){
+      var saved = localStorage.getItem('portfolio-theme');
+      if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    })();
+  </script>
+</head>
+<body>
+
+  <canvas id="codeRain"></canvas>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="./index.html" class="logo" style="text-decoration:none">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">tanaCodes</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <a href="./index.html#projects" class="cs-back">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+      </a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-sun"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="cs-hero">
+    <div class="cs-hero-inner">
+      <div class="cs-eyebrow">Case Study · 02</div>
+      <h1 class="cs-hero-title">Momentum — <em>Habit &amp; Task Tracker</em></h1>
+      <p class="cs-hero-tagline">
+        A clean, real-time productivity app that helps users build consistent habits and manage daily tasks — powered by React, Vite, Firebase, and Tailwind CSS, with seamless sync across all devices.
+      </p>
+      <div class="cs-meta-row">
+        <span class="cs-meta-item"><i class="fas fa-calendar-alt"></i> 2025</span>
+        <span class="cs-meta-item"><i class="fas fa-user"></i> Solo Developer</span>
+        <span class="cs-meta-item"><i class="fab fa-react"></i> React SPA</span>
+        <span class="cs-meta-item"><i class="fas fa-fire"></i> Firebase</span>
+      </div>
+      <div class="cs-hero-btns">
+        <a href="#" class="btn-primary">Live Site <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── COVER IMAGE ── -->
+  <div class="cs-cover">
+    <img src="./images/Momentum.png" alt="Momentum app desktop view" />
+  </div>
+
+  <!-- ── OVERVIEW ── -->
+  <section class="cs-section">
+    <div class="cs-container">
+      <div class="cs-overview-grid">
+        <div>
+          <div class="cs-label">// Project Overview</div>
+          <h2 class="cs-section-title">Build Better <em>Habits, Daily</em></h2>
+          <div class="cs-divider"></div>
+          <p class="cs-body">
+            Momentum is a productivity app designed around one idea: small, consistent actions compound into real change. It gives users a clean space to track daily habits, manage tasks with priorities, and watch their streaks grow — all synced in real time via Firebase so nothing is ever lost between sessions or devices.
+          </p>
+          <p class="cs-body">
+            Built as a React SPA with Vite for blazing-fast development and Tailwind CSS for a polished, responsive UI — Momentum was crafted with as much attention to the micro-interactions and feel as to the underlying data architecture.
+          </p>
+        </div>
+        <div class="cs-stats-col">
+          <div class="cs-stat-block">
+            <span class="num">Real-time</span>
+            <span class="lbl">Firebase Sync</span>
+          </div>
+          <div class="cs-stat-block">
+            <span class="num">2-in-1</span>
+            <span class="lbl">Habits + Tasks</span>
+          </div>
+          <div class="cs-stat-block">
+            <span class="num">100%</span>
+            <span class="lbl">Responsive</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CHALLENGE & SOLUTION ── -->
+  <section class="cs-section alt">
+    <div class="cs-container">
+      <div class="cs-label">// Problem & Approach</div>
+      <h2 class="cs-section-title">The Challenge & <em>Solution</em></h2>
+      <div class="cs-divider"></div>
+      <div class="cs-two-col">
+        <div class="cs-col-card">
+          <h3>The Challenge</h3>
+          <p>
+            Most habit and task apps are either too bloated with features that overwhelm users, or too basic to provide real motivation. People start strong, lose their streak, and abandon the tool entirely. The challenge was building something that felt effortless to use daily — low friction to log, high reward to maintain.
+          </p>
+        </div>
+        <div class="cs-col-card">
+          <h3>The Solution</h3>
+          <p>
+            I designed Momentum around minimal daily input: tap to log a habit, add a task in one step. Firebase Firestore handles real-time data persistence so users never lose progress. Firebase Auth provides secure, friction-free sign-in. Streak counters and visual progress indicators provide just enough gamification to keep users coming back.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FEATURES ── -->
+  <section class="cs-section">
+    <div class="cs-container">
+      <div class="cs-label">// Functionality</div>
+      <h2 class="cs-section-title">Key <em>Features</em></h2>
+      <div class="cs-divider"></div>
+      <div class="cs-features-grid">
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-check-circle"></i></div>
+          <h3>Habit Tracking</h3>
+          <p>Log daily habits with a single tap. Visual streak counters show how many days in a row you've stayed consistent.</p>
+        </div>
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-tasks"></i></div>
+          <h3>Task Management</h3>
+          <p>Create, prioritise, and complete tasks with due dates and category labels to keep your day organised.</p>
+        </div>
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-fire"></i></div>
+          <h3>Streak Counter</h3>
+          <p>Gamified streaks reward consistency — breaking a streak is visible enough to motivate users to maintain it.</p>
+        </div>
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-sync-alt"></i></div>
+          <h3>Real-time Sync</h3>
+          <p>Firebase Firestore syncs data instantly across all devices — open the app on phone or desktop, always up to date.</p>
+        </div>
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-user-shield"></i></div>
+          <h3>Firebase Auth</h3>
+          <p>Secure user authentication with Google Sign-In or email — each user's data is private and persistent.</p>
+        </div>
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Fully Responsive</h3>
+          <p>Optimised for mobile-first use — because habits are logged on the go, not just at a desk.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TECH STACK ── -->
+  <section class="cs-section alt">
+    <div class="cs-container">
+      <div class="cs-label">// Technologies</div>
+      <h2 class="cs-section-title">Tech <em>Stack</em></h2>
+      <div class="cs-divider"></div>
+      <div class="cs-tech-grid">
+        <div class="cs-tech-chip">
+          <i class="fab fa-react"></i>
+          <div class="cs-tech-chip-info">
+            <strong>React</strong>
+            <span>Component-driven UI architecture</span>
+          </div>
+        </div>
+        <div class="cs-tech-chip">
+          <i class="fas fa-bolt"></i>
+          <div class="cs-tech-chip-info">
+            <strong>Vite</strong>
+            <span>Lightning-fast dev server &amp; build tool</span>
+          </div>
+        </div>
+        <div class="cs-tech-chip">
+          <i class="fas fa-fire"></i>
+          <div class="cs-tech-chip-info">
+            <strong>Firebase</strong>
+            <span>Firestore real-time DB &amp; Authentication</span>
+          </div>
+        </div>
+        <div class="cs-tech-chip">
+          <i class="fas fa-wind"></i>
+          <div class="cs-tech-chip-info">
+            <strong>Tailwind CSS</strong>
+            <span>Utility-first styling, responsive design</span>
+          </div>
+        </div>
+        <div class="cs-tech-chip">
+          <i class="fab fa-js-square"></i>
+          <div class="cs-tech-chip-info">
+            <strong>JavaScript (ES6+)</strong>
+            <span>Hooks, context, async state management</span>
+          </div>
+        </div>
+        <div class="cs-tech-chip">
+          <i class="fas fa-rocket"></i>
+          <div class="cs-tech-chip-info">
+            <strong>Vercel</strong>
+            <span>Continuous deployment from GitHub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SCREENSHOTS ── -->
+  <section class="cs-section">
+    <div class="cs-container">
+      <div class="cs-label">// Preview</div>
+      <h2 class="cs-section-title">Desktop &amp; <em>Mobile View</em></h2>
+      <div class="cs-divider"></div>
+      <div class="cs-gallery">
+        <img src="./images/Momentum.png" alt="Momentum desktop view" />
+      </div>
+      <div class="cs-gallery" style="margin-top: 20px;">
+        <img src="./images/Momentum mobile.png" alt="Momentum mobile view" style="max-width:380px; margin: 0 auto; display:block;" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RESULTS ── -->
+  <section class="cs-section alt">
+    <div class="cs-container">
+      <div class="cs-label">// Outcomes</div>
+      <h2 class="cs-section-title">Results &amp; <em>Takeaways</em></h2>
+      <div class="cs-divider"></div>
+      <p class="cs-body">
+        Momentum delivered a polished, real-world productivity tool that demonstrates React state management at scale, Firebase integration, and thoughtful UX design. The project deepened my expertise in real-time databases, authentication flows, and building apps that feel genuinely good to use every day.
+      </p>
+      <ul class="cs-results-list">
+        <li>Live React SPA with real-time Firebase sync working across all devices</li>
+        <li>Secure authentication protecting each user's personal habit and task data</li>
+        <li>Streak gamification significantly increasing daily engagement and retention</li>
+        <li>Mobile-first layout making habit logging effortless on the go</li>
+        <li>Vite build pipeline delivering sub-second hot module reloads during development</li>
+        <li>Clean Tailwind CSS design system ensuring visual consistency throughout</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── NEXT PROJECT ── -->
+  <section class="cs-cta-section">
+    <div class="cs-container">
+      <div class="cs-cta-label">// Next Case Study</div>
+      <h2>Farmsphere</h2>
+      <p>Full-stack agricultural marketplace connecting farmers with buyers directly.</p>
+      <div class="cs-cta-btns">
+        <a href="./farmsphere.html" class="btn-primary">View Case Study <i class="fas fa-arrow-right"></i></a>
+        <a href="./index.html#projects" class="btn-ghost">All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">tanaCodes</span>
+        <span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy">© 2025 Joy Afemije · Built with passion &amp; code</p>
+      <ul class="footer-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html#projects">Projects</a></li>
+        <li><a href="./index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <div id="toast"></div>
+  <script src="main.js"></script>
+</body>
+</html>
