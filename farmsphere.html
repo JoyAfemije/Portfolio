@@ -9,6 +9,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="case-study.css" />
+  <style>
+    /* Farmsphere — Green */
+    :root {
+      --gold: #16a34a; --gold-lt: #22c55e;
+      --gold-dim: rgba(22,163,74,0.12);
+      --border-h: rgba(22,163,74,0.4);
+    }
+    html[data-theme="light"] {
+      --gold: #15803d; --gold-lt: #16a34a;
+      --gold-dim: rgba(21,128,61,0.10);
+      --border-h: rgba(21,128,61,0.38);
+    }
+  </style>
   <script>
     (function(){
       var saved = localStorage.getItem('portfolio-theme');
@@ -40,9 +53,9 @@
   <section class="cs-hero">
     <div class="cs-hero-inner">
       <div class="cs-eyebrow">Case Study · 05</div>
-      <h1 class="cs-hero-title">Farmsphere — <em>Agricultural Marketplace</em></h1>
+      <h1 class="cs-hero-title">Farmsphere — <em>Agri-Tech Store</em></h1>
       <p class="cs-hero-tagline">
-        A full-stack marketplace that cuts out the middleman — connecting farmers directly with buyers through a modern, responsive platform built on React, Vite, Tailwind CSS, and MongoDB, deployed across Vercel and Render.
+        A full-stack agri-tech e-commerce platform where farmers and agricultural businesses can shop for equipment, chemicals, pesticides, fertilizers, seeds, and farm supplies — built on React, Vite, Tailwind CSS, and MongoDB, deployed across Vercel and Render.
       </p>
       <div class="cs-meta-row">
         <span class="cs-meta-item"><i class="fas fa-calendar-alt"></i> 2025</span>
@@ -67,13 +80,13 @@
       <div class="cs-overview-grid">
         <div>
           <div class="cs-label">// Project Overview</div>
-          <h2 class="cs-section-title">Farm to Buyer — <em>No Middleman</em></h2>
+          <h2 class="cs-section-title">One Stop <em>Agri-Tech Store</em></h2>
           <div class="cs-divider"></div>
           <p class="cs-body">
-            Farmsphere is a full-stack agricultural marketplace that solves a fundamental inefficiency in local food supply chains: farmers earning a fraction of the final sale price because of unnecessary intermediaries. The platform gives farmers a direct digital shopfront, and gives buyers access to fresh produce at fair prices.
+            Farmsphere is a full-stack agri-tech e-commerce platform built for the modern farming community. It gives farmers, agribusinesses, and smallholders a single place to browse and purchase agricultural equipment, chemicals, pesticides, fertilizers, seeds, and other farm supplies — without the hassle of multiple suppliers or offline haggling.
           </p>
           <p class="cs-body">
-            The frontend is a React + Vite SPA styled with Tailwind CSS, deployed on Vercel. The backend API is built with Node.js and Express, backed by MongoDB for flexible product and order data, and deployed on Render. The result is a robust, full-stack platform capable of handling real marketplace transactions.
+            The React + Vite frontend is styled with Tailwind CSS and deployed on Vercel for fast global delivery. The Node.js/Express backend API is backed by MongoDB for flexible product catalogue and order management, hosted on Render. Together they deliver a robust, scalable agri-tech shopping experience.
           </p>
         </div>
         <div class="cs-stats-col">
@@ -104,13 +117,13 @@
         <div class="cs-col-card">
           <h3>The Challenge</h3>
           <p>
-            Farmers in local markets rely heavily on middlemen to move their produce, losing significant revenue in the process. At the same time, buyers overpay for produce that often isn't fresh. There was no accessible digital platform purpose-built for agricultural trade that bridged this gap without complex onboarding or high platform fees.
+            Farmers and agribusinesses in many regions struggle to source quality equipment, chemicals, and supplies reliably. Offline markets are fragmented, pricing is inconsistent, and counterfeit products are common. There was no trusted digital platform purpose-built for agricultural input purchases with proper product information, verified sellers, and convenient delivery.
           </p>
         </div>
         <div class="cs-col-card">
           <h3>The Solution</h3>
           <p>
-            I built a two-sided marketplace where farmers register, list produce with images and pricing, and manage orders — while buyers browse, search by category or location, and place orders directly. A Node.js/Express REST API handles all business logic, with MongoDB storing flexible product and user data. Render hosts the backend; Vercel delivers the frontend globally.
+            I built a full-stack agri-tech store where vendors list agricultural products — from tractors and irrigation tools to pesticides and fertilizers — with detailed specs, safety information, and pricing. Buyers get a clean browsing experience with category filters, product search, and a straightforward checkout. MongoDB handles the flexible product catalogue; Render serves the API; Vercel delivers the storefront.
           </p>
         </div>
       </div>
@@ -125,34 +138,34 @@
       <div class="cs-divider"></div>
       <div class="cs-features-grid">
         <div class="cs-feature-card">
-          <div class="cs-feature-icon"><i class="fas fa-store"></i></div>
-          <h3>Farmer Storefront</h3>
-          <p>Farmers create profiles and list produce with images, descriptions, quantities, and pricing — managed via a clean dashboard.</p>
+          <div class="cs-feature-icon"><i class="fas fa-tractor"></i></div>
+          <h3>Equipment Catalogue</h3>
+          <p>Browse tractors, irrigation systems, sprayers, ploughs, and other farm machinery — with specs, images, and pricing.</p>
+        </div>
+        <div class="cs-feature-card">
+          <div class="cs-feature-icon"><i class="fas fa-flask"></i></div>
+          <h3>Chemicals &amp; Pesticides</h3>
+          <p>Shop herbicides, insecticides, fungicides, and fertilizers with safety data sheets and usage instructions per product.</p>
         </div>
         <div class="cs-feature-card">
           <div class="cs-feature-icon"><i class="fas fa-search"></i></div>
           <h3>Search &amp; Filter</h3>
-          <p>Buyers can search produce by name, filter by category (grains, vegetables, fruits) and sort by price or freshness.</p>
+          <p>Filter by product category (equipment, chemicals, seeds, supplies), brand, price range, and availability.</p>
         </div>
         <div class="cs-feature-card">
-          <div class="cs-feature-icon"><i class="fas fa-shopping-basket"></i></div>
-          <h3>Order Management</h3>
-          <p>Full order flow — cart, checkout, order confirmation, and order history for both farmers and buyers.</p>
+          <div class="cs-feature-icon"><i class="fas fa-shopping-cart"></i></div>
+          <h3>Cart &amp; Checkout</h3>
+          <p>Add to cart, review order, and complete checkout with delivery details — full order history and tracking per user.</p>
         </div>
         <div class="cs-feature-card">
           <div class="cs-feature-icon"><i class="fas fa-user-lock"></i></div>
           <h3>Authentication</h3>
-          <p>Secure JWT-based authentication with separate farmer and buyer roles, each with tailored dashboards and permissions.</p>
-        </div>
-        <div class="cs-feature-card">
-          <div class="cs-feature-icon"><i class="fas fa-database"></i></div>
-          <h3>MongoDB Backend</h3>
-          <p>Flexible NoSQL data model handling product listings, user profiles, and orders via a RESTful Express API on Render.</p>
+          <p>Secure JWT-based auth for buyers and vendors, each with tailored dashboards and role-based access control.</p>
         </div>
         <div class="cs-feature-card">
           <div class="cs-feature-icon"><i class="fas fa-mobile-alt"></i></div>
           <h3>Fully Responsive</h3>
-          <p>Tailwind CSS ensures the marketplace works beautifully on any device — from mobile in the field to desktop in the office.</p>
+          <p>Tailwind CSS delivers a clean, usable storefront whether shopping on a phone in the field or a desktop in the office.</p>
         </div>
       </div>
     </div>

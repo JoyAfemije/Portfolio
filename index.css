@@ -1063,6 +1063,22 @@ html[data-theme="light"] section:not(#home) {
   cursor: not-allowed;
 }
 
+/* ── View All CTA (below book stage) ── */
+.view-all-cta {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+.view-all-cta p {
+  font-size: 0.88rem;
+  color: var(--muted);
+  font-family: var(--mono);
+  letter-spacing: 0.04em;
+}
+
 /* ── See More button (inside each book page) ── */
 .btn-see-more {
   display: inline-flex;

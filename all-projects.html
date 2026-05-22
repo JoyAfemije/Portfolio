@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Projects — Joy Etana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="case-study.css" />
+  <script>
+    (function(){
+      var saved = localStorage.getItem('portfolio-theme');
+      if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    })();
+  </script>
+</head>
+<body>
+
+  <canvas id="codeRain"></canvas>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="./index.html" class="logo" style="text-decoration:none">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">tanaCodes</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <a href="./index.html#projects" class="cs-back">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+      </a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-sun"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="cs-hero">
+    <div class="cs-hero-inner">
+      <div class="cs-eyebrow">All Case Studies</div>
+      <h1 class="cs-hero-title">Every Project, <em>In Depth</em></h1>
+      <p class="cs-hero-tagline">
+        Six real-world projects — from full-stack marketplaces to productivity apps and luxury hospitality sites. Click any card to read the full case study.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECT GRID -->
+  <section class="cs-section">
+    <div class="cs-container">
+      <div class="all-proj-grid">
+
+        <!-- TBII -->
+        <a href="./tbii.html" class="all-proj-card" style="--accent:#e07000; --accent-dim:rgba(224,112,0,0.1);">
+          <div class="all-proj-img">
+            <img src="./images/tbii.png" alt="TBII Dropshipping Platform" />
+          </div>
+          <div class="all-proj-body">
+            <div class="all-proj-top">
+              <span class="all-proj-num">01</span>
+              <span class="all-proj-badge" style="background:rgba(224,112,0,0.12);color:#e07000;border-color:rgba(224,112,0,0.35);">Featured</span>
+            </div>
+            <h2 class="all-proj-title">TBII Dropshipping Platform</h2>
+            <p class="all-proj-desc">Full-stack e-commerce with Stripe payments, Google Auth, live chat, email automation, and cPanel hosting.</p>
+            <div class="all-proj-tags">
+              <span>HTML/CSS</span><span>JavaScript</span><span>PHP</span><span>Stripe</span>
+            </div>
+            <span class="all-proj-cta" style="color:#e07000;">Read Case Study <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- ArtisanHub -->
+        <a href="./artisanhub.html" class="all-proj-card" style="--accent:#d97706; --accent-dim:rgba(217,119,6,0.1);">
+          <div class="all-proj-img">
+            <img src="./images/ArtisanHub.png" alt="ArtisanHub Marketplace" />
+          </div>
+          <div class="all-proj-body">
+            <div class="all-proj-top">
+              <span class="all-proj-num">02</span>
+            </div>
+            <h2 class="all-proj-title">ArtisanHub Marketplace</h2>
+            <p class="all-proj-desc">React SPA connecting local artisans with clients via location-based discovery, portfolio pages, and booking.</p>
+            <div class="all-proj-tags">
+              <span>React</span><span>JavaScript</span><span>Responsive</span>
+            </div>
+            <span class="all-proj-cta" style="color:#d97706;">Read Case Study <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Momentum -->
+        <a href="./momentum.html" class="all-proj-card" style="--accent:#7c3aed; --accent-dim:rgba(124,58,237,0.1);">
+          <div class="all-proj-img">
+            <img src="./images/Momentum.png" alt="Momentum" />
+          </div>
+          <div class="all-proj-body">
+            <div class="all-proj-top">
+              <span class="all-proj-num">03</span>
+            </div>
+            <h2 class="all-proj-title">Momentum</h2>
+            <p class="all-proj-desc">Habit &amp; task tracker with real-time Firebase sync, streak gamification, and a mobile-first UI.</p>
+            <div class="all-proj-tags">
+              <span>React</span><span>Vite</span><span>Firebase</span><span>Tailwind</span>
+            </div>
+            <span class="all-proj-cta" style="color:#7c3aed;">Read Case Study <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Farmsphere -->
+        <a href="./farmsphere.html" class="all-proj-card" style="--accent:#16a34a; --accent-dim:rgba(22,163,74,0.1);">
+          <div class="all-proj-img">
+            <img src="./images/farmsphere.png" alt="Farmsphere" />
+          </div>
+          <div class="all-proj-body">
+            <div class="all-proj-top">
+              <span class="all-proj-num">04</span>
+            </div>
+            <h2 class="all-proj-title">Farmsphere</h2>
+            <p class="all-proj-desc">Agri-tech marketplace for agricultural equipment, chemicals, pesticides, and farm supplies — full-stack with MongoDB &amp; Render.</p>
+            <div class="all-proj-tags">
+              <span>React</span><span>MongoDB</span><span>Tailwind</span><span>Render</span>
+            </div>
+            <span class="all-proj-cta" style="color:#16a34a;">Read Case Study <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Resort & Spa -->
+        <a href="./resort-spa.html" class="all-proj-card" style="--accent:#0891b2; --accent-dim:rgba(8,145,178,0.1);">
+          <div class="all-proj-img">
+            <img src="./images/Screenshot 2026-02-07 221929.png" alt="Resort &amp; Spa" />
+          </div>
+          <div class="all-proj-body">
+            <div class="all-proj-top">
+              <span class="all-proj-num">05</span>
+            </div>
+            <h2 class="all-proj-title">Resort &amp; Spa</h2>
+            <p class="all-proj-desc">Luxury hospitality website with online booking, automated confirmation emails, and responsive design.</p>
+            <div class="all-proj-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <span class="all-proj-cta" style="color:#0891b2;">Read Case Study <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <!-- Raigee -->
+        <a href="./raigee.html" class="all-proj-card" style="--accent:#2563eb; --accent-dim:rgba(37,99,235,0.1);">
+          <div class="all-proj-img">
+            <img src="./images/raigee porfolio.png" alt="Raigee Portfolio" />
+          </div>
+          <div class="all-proj-body">
+            <div class="all-proj-top">
+              <span class="all-proj-num">06</span>
+            </div>
+            <h2 class="all-proj-title">Raigee Portfolio</h2>
+            <p class="all-proj-desc">Personal portfolio with scroll animations, working contact form, Ntfy push notifications, and Google Analytics.</p>
+            <div class="all-proj-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <span class="all-proj-cta" style="color:#2563eb;">Read Case Study <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">tanaCodes</span>
+        <span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy">© 2025 Joy Afemije · Built with passion &amp; code</p>
+      <ul class="footer-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html#projects">Projects</a></li>
+        <li><a href="./index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <div id="toast"></div>
+  <script src="main.js"></script>
+</body>
+</html>
